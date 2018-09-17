@@ -2,6 +2,8 @@
 Front End for displaying the contents of the Back-End Java API developed for Gympass Coding Challenge.
 [Grab the code for the API while it lasts.](https://github.com/leonardomarinho/gympass-challenge)
 
+![sample](images/sample.png?raw=true "sample")
+
 ## How it works
 
 This project serves as a front end for interacting with the API.
