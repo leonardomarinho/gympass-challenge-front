@@ -1,0 +1,118 @@
+<div class="main-content-container">
+	<div class="best-lap-container">
+		<div class="card text-white bg-primary mb-3 text-center">
+			<h5 class="card-header">Best Lap From Race</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.bestLapFromRace.driverId}} - {{data.bestLapFromRace.driverName}}</h6>
+				<p class="card-text">Hour: {{data.bestLapFromRace.hour}}</p>
+				<p class="card-text">Lap Number: {{data.bestLapFromRace.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.bestLapFromRace.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.bestLapFromRace.averageLapSpeed}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="positions-container card-deck">
+		<div class="card text-white bg-success mb-3">
+			<h5 class="card-header">WINNER</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.positions[0].driverId}} - {{data.positions[0].driverName}}</h6>
+				<p class="card-text">Completed laps: {{data.positions[0].completedLaps}}</p>
+				<p class="card-text">Total duration: {{data.positions[0].totalDuration}}</p>
+				<p class="card-text">Total average speed: {{data.positions[0].totalAverageSpeed}}</p>
+				<p class="card-text">Delay after winner: {{data.positions[0].delayAfterWinner}}</p>
+			</div>
+		</div>
+		<div class="card text-white bg-secondary mb-3">
+			<h5 class="card-header">2nd Place</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.positions[1].driverId}} - {{data.positions[1].driverName}}</h6>
+				<p class="card-text">Completed laps: {{data.positions[1].completedLaps}}</p>
+				<p class="card-text">Total duration: {{data.positions[1].totalDuration}}</p>
+				<p class="card-text">Total average speed: {{data.positions[1].totalAverageSpeed}}</p>
+				<p class="card-text">Delay after winner: {{data.positions[1].delayAfterWinner}}</p>
+			</div>
+		</div>
+		<div class="card text-white bg-info mb-3">
+			<h5 class="card-header">3rd Place</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.positions[2].driverId}} - {{data.positions[2].driverName}}</h6>
+				<p class="card-text">Completed laps: {{data.positions[2].completedLaps}}</p>
+				<p class="card-text">Total duration: {{data.positions[2].totalDuration}}</p>
+				<p class="card-text">Total average speed: {{data.positions[2].totalAverageSpeed}}</p>
+				<p class="card-text">Delay after winner: {{data.positions[2].delayAfterWinner}}</p>
+			</div>
+		</div>
+		<div class="card text-white bg-warning mb-3">
+			<h5 class="card-header">4th Place</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.positions[3].driverId}} - {{data.positions[3].driverName}}</h6>
+				<p class="card-text">Completed laps: {{data.positions[3].completedLaps}}</p>
+				<p class="card-text">Total duration: {{data.positions[3].totalDuration}}</p>
+				<p class="card-text">Total average speed: {{data.positions[3].totalAverageSpeed}}</p>
+				<p class="card-text">Delay after winner: {{data.positions[3].delayAfterWinner}}</p>
+			</div>
+		</div>
+		<div class="card text-white bg-danger mb-3">
+			<h5 class="card-header">5th Place</h5>
+			<div class="card-body">
+				<h6 class="card-title">{{data.positions[4].driverId}} - {{data.positions[4].driverName}}</h6>
+				<p class="card-text">Completed laps: {{data.positions[4].completedLaps}}</p>
+				<p class="card-text">Total duration: {{data.positions[4].totalDuration}}</p>
+				<p class="card-text">Total average speed: {{data.positions[4].totalAverageSpeed}}</p>
+				<p class="card-text">Delay after winner: {{data.positions[4].delayAfterWinner}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="positions-container card-deck">
+		<div class="card border-primary mb-3">
+			<h5 class=" card-header">Best Lap From</h5>
+			<div class="card-body text-primary">
+				<h6 class="card-title">{{data.positions[0].bestLap.driverId}} - {{data.positions[0].bestLap.driverName}}</h6>
+				<p class="card-text">Hour: {{data.positions[0].bestLap.hour}}</p>
+				<p class="card-text">Lap Number: {{data.positions[0].bestLap.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.positions[0].bestLap.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.positions[0].bestLap.averageLapSpeed}}</p>
+			</div>
+		</div>
+		<div class="card border-success mb-3">
+			<h5 class=" card-header">Best Lap From</h5>
+			<div class="card-body text-success">
+				<h6 class="card-title">{{data.positions[1].bestLap.driverId}} - {{data.positions[1].bestLap.driverName}}</h6>
+				<p class="card-text">Hour: {{data.positions[1].bestLap.hour}}</p>
+				<p class="card-text">Lap Number: {{data.positions[1].bestLap.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.positions[1].bestLap.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.positions[1].bestLap.averageLapSpeed}}</p>
+			</div>
+		</div>
+		<div class="card border-secondary mb-3">
+			<h5 class=" card-header">Best Lap From</h5>
+			<div class="card-body text-secondary">
+				<h6 class="card-title">{{data.positions[2].bestLap.driverId}} - {{data.positions[2].bestLap.driverName}}</h6>
+				<p class="card-text">Hour: {{data.positions[2].bestLap.hour}}</p>
+				<p class="card-text">Lap Number: {{data.positions[2].bestLap.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.positions[2].bestLap.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.positions[2].bestLap.averageLapSpeed}}</p>
+			</div>
+		</div>
+		<div class="card border-danger mb-3">
+			<h5 class=" card-header">Best Lap From</h5>
+			<div class="card-body text-dark">
+				<h6 class="card-title">{{data.positions[3].bestLap.driverId}} - {{data.positions[3].bestLap.driverName}}</h6>
+				<p class="card-text">Hour: {{data.positions[3].bestLap.hour}}</p>
+				<p class="card-text">Lap Number: {{data.positions[3].bestLap.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.positions[3].bestLap.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.positions[3].bestLap.averageLapSpeed}}</p>
+			</div>
+		</div>
+		<div class="card border-info mb-3">
+			<h5 class=" card-header">Best Lap From</h5>
+			<div class="card-body text-info">
+				<h6 class="card-title">{{data.positions[4].bestLap.driverId}} - {{data.positions[4].bestLap.driverName}}</h6>
+				<p class="card-text">Hour: {{data.positions[4].bestLap.hour}}</p>
+				<p class="card-text">Lap Number: {{data.positions[4].bestLap.lapNumber}}</p>
+				<p class="card-text">Lap Duration: {{data.positions[4].bestLap.lapDuration}}</p>
+				<p class="card-text">Average Lap Speed: {{data.positions[4].bestLap.averageLapSpeed}}</p>
+			</div>
+		</div>
+	</div>
+</div>
